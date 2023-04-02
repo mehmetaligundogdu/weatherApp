@@ -1,11 +1,11 @@
 import React from 'react'
-import Arkaplan from '../photos/arkaplan.jpeg'
+import ChangeBackground from './ChangeBackground';
 
-function Background() {
+function Background({background}) {
   return (
     <div className='background'>
         <div className='overlay'></div>
-        <img className='background-image' src={Arkaplan}></img>
+        <ChangeBackground status={background}/>
     </div>
   )
 }
